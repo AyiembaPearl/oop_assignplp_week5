@@ -26,7 +26,6 @@ class Phone:
 
 #inheritance tablet inherits features of phone
 class Tablet(Phone):
-    
     #Initializing attributes
     def __init__(self, model, design, operating_system, colour, for_sale, screen_size):
         super(Phone, self).__init__(model, design, operating_system, colour, for_sale)  # call to Phone's __init__()
@@ -48,18 +47,11 @@ phone6 = Phone("Neold", "Compact", "Linux", "White",True)
 tablet = Tablet("Hewlett-Packward Tab", "Sleek", "Android", "Black", True, 10.5)
 
 #calling phone attributes
-print(phone1)
 phone1.features()
-print(phone2)
 phone2.features()
-print(phone3)
 phone3.features()
-print(phone4)
 phone4.features()
-print(phone5)
 phone5.features()
-print(phone6)
 phone6.features()
-#calling Tablet class function
-print("\nThe HP tablet features:")
+# #calling Tablet class function
 tablet.features()
